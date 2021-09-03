@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30_dp"
+        android:layout_marginTop="@dimen/margin_10_dp"
+        android:fontFamily="@font/hk_grotesk_medium"
+        android:text="Welcome back 🤗"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetings_text"
+        android:textColor="@color/primaryTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hk_grotesk_bold"
+        android:text="Good Afternoon"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginTop="@dimen/margin_23_dp"
+        app:cardElevation="0dp"
+        android:layout_marginStart="@dimen/margin_15_dp"
+        android:layout_marginEnd="@dimen/margin_15_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        app:cardBackgroundColor="#D8E1E5"
+        android:layout_height="180dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_15_dp"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:text="You are in good \nhands with us"
+                android:lineSpacingExtra="-5dp"
+                android:textColor="#00235E"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/delighted"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/delighted"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:text="We are delighted to provide \nthe best services"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/good"
+                app:layout_constraintTop_toBottomOf="@+id/good" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_marginBottom="-10dp"
+        android:id="@+id/solar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="-81dp"
+        android:src="@drawable/solar_image"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@id/card"
+        app:layout_constraintTop_toTopOf="@+id/card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
