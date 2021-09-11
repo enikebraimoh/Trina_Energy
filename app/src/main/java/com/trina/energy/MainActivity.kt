@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
@@ -46,28 +47,18 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.tool_bar_menu, menu)
-        return super.onCreateOptionsMenu(menu)
-
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.toolbar_menu -> {
-                findNavController(R.id.nav_host_fragment_container)
-                true
-            }
-            else -> false
-        }
-    }
-
     private fun setupNavigation() {
         navController.addOnDestinationChangedListener { nc: NavController, destination: NavDestination, bundle: Bundle? ->
             when (destination.id) {
                 R.id.homeFragment -> {
                     supportActionBar?.show()
+                    drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
                     binding.toolbar.setNavigationIcon(R.drawable.ic_menu_icon)
+                }
+                R.id.notificationFragment ->{
+                    supportActionBar?.show()
+                    drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+
                 }
                 else -> {
                     binding.toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
