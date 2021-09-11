@@ -10,6 +10,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.trina.energy.databinding.ActivityMainBinding
 
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityMainBinding
     lateinit var navController: NavController
+    lateinit var drawer : DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,11 +32,16 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFragment.navController
 
+        // initialized drawer binding
+        drawer =  binding.drawerLayout
+
         //for appbar & drawer layout
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-        setupWithNavController(binding.toolbar, navController)
+        setupWithNavController(binding.toolbar, navController,AppBarConfiguration(navController.graph,drawer))
+        setupWithNavController(binding.navview,navController)
+        NavigationUI.setupActionBarWithNavController(this,navController,drawer)
 
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         setupNavigation()
 
     }
@@ -68,6 +76,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return NavigationUI.navigateUp(navController,drawer)
     }
 
 }
