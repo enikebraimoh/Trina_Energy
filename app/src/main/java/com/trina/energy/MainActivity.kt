@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.homeFragment -> {
                     supportActionBar?.show()
                     drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
-                    binding.toolbar.setNavigationIcon(R.drawable.ic_menu_icon)
+                   // binding.toolbar.setNavigationIcon(R.drawable.ic_menu_icon)
                 }
                 R.id.notificationFragment ->{
                     supportActionBar?.show()
@@ -61,7 +61,6 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 else -> {
-                    binding.toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
                     supportActionBar?.show()
                 }
             }

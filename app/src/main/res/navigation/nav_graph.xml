@@ -15,11 +15,24 @@
             app:destination="@id/notificationFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_out_right" />
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_cctvFragment"
+            app:destination="@id/cctvFragment"
+            app:enterAnim="@anim/bounce"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.trina.energy.ui.NotificationFragment"
         android:label="Notifications"
         tools:layout="@layout/fragment_notification" />
+    <fragment
+        tools:layout="@layout/fragment_cctv"
+        android:id="@+id/cctvFragment"
+        android:name="com.trina.energy.CctvFragment"
+        android:label="CctvFragment" />
 </navigation>

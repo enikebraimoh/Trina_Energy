@@ -2,18 +2,15 @@ package com.trina.energy.ui
 
 import android.os.Bundle
 import android.view.*
+import android.view.animation.AnimationUtils
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.trina.energy.R
+import com.trina.energy.core.BaseFragment
+import com.trina.energy.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
-        setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
+class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
@@ -30,4 +27,22 @@ class HomeFragment : Fragment() {
         }
     }
 
+    override fun start() {
+       setHasOptionsMenu(true)
+        val animation = AnimationUtils.loadAnimation(requireContext(), R.anim.bounce)
+        val animation2 = AnimationUtils.loadAnimation(requireContext(), R.anim.bounce)
+        val animation3 = AnimationUtils.loadAnimation(requireContext(), R.anim.bounce)
+        binding.services1.setOnClickListener {
+            binding.services1Parent.startAnimation(animation)
+            findNavController().navigate(R.id.action_homeFragment_to_cctvFragment)
+        }
+
+        binding.services2.setOnClickListener {
+            binding.services2Parent.startAnimation(animation2)
+        }
+
+        binding.services3.setOnClickListener {
+            binding.services3Parent.startAnimation(animation3)
+        }
+    }
 }

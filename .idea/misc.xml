@@ -8,8 +8,10 @@
         <entry key="app/src/main/res/drawable/services_3_bg.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/drawable/services_bg.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_cctv.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/header_nav.xml" value="0.25" />
         <entry key="app/src/main/res/menu/tool_bar_menu.xml" value="0.25" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22604166666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22604166666666667" />
