@@ -1,5 +1,34 @@
 <resources>
     <string name="app_name">Trina Energy</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="fake_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh,
+        condimentum vitae pellentesque sed, cursus ac sapien. Mauris faucibus, risus ut ultrices faucibus, ipsum tellus feugiat mi,
+        sed porttitor arcu sem et justo. Morbi et nulla luctus, varius leo ut, aliquet mi. Duis lobortis fringilla nunc ac dignissim. I
+        n lorem lacus, vestibulum ac sem at, aliquam posuere sem. Donec massa justo, suscipit quis pulvinar non, ullamcorper quis sem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur.
+        Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est.
+        Integer ex nibh,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh,
+        condimentum vitae pellentesque sed, cursus ac sapien. Mauris faucibus, risus ut ultrices faucibus, ipsum tellus feugiat mi,
+        sed porttitor arcu sem et justo. Morbi et nulla luctus, varius leo ut, aliquet mi. Duis lobortis fringilla nunc ac dignissim. I
+        n lorem lacus, vestibulum ac sem at, aliquam posuere sem. Donec massa justo, suscipit quis pulvinar non, ullamcorper quis sem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur.
+        Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est.
+        Integer ex nibh,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh,
+        condimentum vitae pellentesque sed, cursus ac sapien. Mauris faucibus, risus ut ultrices faucibus, ipsum tellus feugiat mi,
+        sed porttitor arcu sem et justo. Morbi et nulla luctus, varius leo ut, aliquet mi. Duis lobortis fringilla nunc ac dignissim. I
+        n lorem lacus, vestibulum ac sem at, aliquam posuere sem. Donec massa justo, suscipit quis pulvinar non, ullamcorper quis sem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur.
+        Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est.
+        Integer ex nibh,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh,
+        condimentum vitae pellentesque sed, cursus ac sapien. Mauris faucibus, risus ut ultrices faucibus, ipsum tellus feugiat mi,
+        sed porttitor arcu sem et justo. Morbi et nulla luctus, varius leo ut, aliquet mi. Duis lobortis fringilla nunc ac dignissim. I
+        n lorem lacus, vestibulum ac sem at, aliquam posuere sem. Donec massa justo, suscipit quis pulvinar non, ullamcorper quis sem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur.
+        Duis vel est eu eros aliquam tempor sit amet in est. Integer ex nibh, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cras id mauris purus. Integer faucibus nisi at orci dignissim, sed gravida risus consectetur. Duis vel est eu eros aliquam tempor sit amet in est.
+        Integer ex nibh,</string>
 </resources>

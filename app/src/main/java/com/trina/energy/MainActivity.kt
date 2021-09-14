@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         //for appbar & drawer layout
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setupWithNavController(binding.toolbar, navController,AppBarConfiguration(navController.graph,drawer))
         setupWithNavController(binding.navview,navController)
         NavigationUI.setupActionBarWithNavController(this,navController,drawer)
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 else -> {
-                    supportActionBar?.show()
+                    supportActionBar?.hide()
                 }
             }
         }
