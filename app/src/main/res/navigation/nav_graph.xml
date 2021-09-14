@@ -33,6 +33,6 @@
     <fragment
         tools:layout="@layout/fragment_cctv"
         android:id="@+id/cctvFragment"
-        android:name="com.trina.energy.CctvFragment"
+        android:name="com.trina.energy.ui.CctvFragment"
         android:label="CctvFragment" />
 </navigation>
