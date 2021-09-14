@@ -20,8 +20,8 @@
         <action
             android:id="@+id/action_homeFragment_to_cctvFragment"
             app:destination="@id/cctvFragment"
-            app:enterAnim="@anim/bounce"
-            app:exitAnim="@anim/fade_out"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
