@@ -6,4 +6,5 @@
     <dimen name="margin_23_dp">23dp</dimen>
     <dimen name="margin_30_dp">30dp</dimen>
     <dimen name="margin_40_dp">40dp</dimen>
+    <dimen name="card_view">20dp</dimen>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -13,10 +13,11 @@
         tools:context=".ui.CctvFragment">
 
         <com.google.android.material.appbar.AppBarLayout
-            android:background="#E1E5D8"
             android:id="@+id/appbar_layout"
             android:layout_width="match_parent"
-            android:layout_height="220dp">
+            android:layout_height="220dp"
+            android:background="#E1E5D8">
+
             <androidx.constraintlayout.motion.widget.MotionLayout
                 android:id="@+id/motion_layout"
                 android:layout_width="match_parent"
@@ -26,6 +27,7 @@
                 app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
 
                 <ImageView
+                    android:clickable="true"
                     android:id="@+id/back_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -48,23 +50,23 @@
                     android:fontFamily="@font/hk_grotesk_bold"
                     android:text="CCTV Installation"
                     android:textColor="@color/secondaryColor"
-                    android:textSize="28sp"/>
+                    android:textSize="28sp" />
 
                 <TextView
                     android:id="@+id/description"
-                    android:fontFamily="@font/hk_grotesk_medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/hk_grotesk_medium"
                     android:text="We are delighted to provide \nthe best services"
                     android:textColor="#727B88"
                     tools:layout_editor_absoluteX="20dp"
                     tools:layout_editor_absoluteY="122dp" />
 
                 <ImageView
-                    android:layout_marginBottom="-80dp"
                     android:id="@+id/camera_image"
                     android:layout_width="300dp"
                     android:layout_height="300dp"
+                    android:layout_marginBottom="-80dp"
                     android:src="@drawable/enike_camera_1" />
 
 
@@ -74,15 +76,30 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
             <LinearLayout
                 android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
+                android:layout_marginBottom="@dimen/margin_40_dp"
+                android:layout_marginStart="@dimen/margin_20_dp"
                 android:layout_marginEnd="10dp"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/camera_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20_dp"
+                    android:fontFamily="@font/hk_grotesk_bold"
+                    android:text="Why do you need a CCTV Camera"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
@@ -90,6 +107,74 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/fake_text"
                     android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_marginBottom="@dimen/margin_10_dp"
+                    android:layout_marginTop="@dimen/margin_20_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:elevation="0dp"
+                            android:layout_marginEnd="@dimen/margin_10_dp"
+                            app:cardCornerRadius="@dimen/margin_10_dp"
+                            app:cardBackgroundColor="@color/primaryLightColor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:elevation="0dp"
+                            android:layout_marginEnd="@dimen/margin_10_dp"
+                            app:cardCornerRadius="@dimen/margin_10_dp"
+                            app:cardBackgroundColor="@color/primaryLightColor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:elevation="0dp"
+                            android:layout_marginEnd="@dimen/margin_10_dp"
+                            app:cardCornerRadius="@dimen/margin_10_dp"
+                            app:cardBackgroundColor="@color/primaryLightColor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:elevation="0dp"
+                            android:layout_marginEnd="@dimen/margin_10_dp"
+                            app:cardCornerRadius="@dimen/margin_10_dp"
+                            app:cardBackgroundColor="@color/primaryLightColor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:elevation="0dp"
+                            android:layout_marginEnd="@dimen/margin_10_dp"
+                            app:cardCornerRadius="@dimen/margin_10_dp"
+                            app:cardBackgroundColor="@color/primaryLightColor"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:background="@drawable/button"
+                    android:textColor="@color/secondaryTextColor"
+                    android:layout_marginTop="@dimen/margin_20_dp"
+                    android:backgroundTint="#00235E"
+                    android:id="@+id/call_for_yours"
+                    android:text="Call For Yours Now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
